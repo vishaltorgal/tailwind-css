@@ -11,9 +11,9 @@
 7. [Borders](#7-borders)
 8. [Shadows](#8-shadows)
 9. [Background](#9-background)
-10. [Hover, Focus & States](#10-hover-focus-&-states)
+10. [Hover, Focus & States](#10-hover-focus--states)
 11. [Responsive Design](#11-responsive-design)
-12. [Transitions & Animations](#12-transitions-&-animations)
+12. [Transitions & Animations](#12-transitions--animations)
 
 
 ## 1. Spacing
