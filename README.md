@@ -14,6 +14,7 @@
 10. [Hover, Focus & States](#10-hover-focus--states)
 11. [Responsive Design](#11-responsive-design)
 12. [Transitions & Animations](#12-transitions--animations)
+13. [Custom CSS](#13-custom-css)
 
 
 ## 1. Spacing
@@ -361,3 +362,37 @@ translate-x-4
 ```
 
 <br>
+
+## 13. Custom CSS
+
+***📄 styles.css (or globals.css)***
+
+```jsx
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .btn-primary {
+    @apply px-4 py-2 bg-blue-500 text-white font-semibold rounded-lg shadow-md hover:bg-blue-600 transition duration-300;
+  }
+
+  .btn-secondary {
+    @apply px-4 py-2 bg-gray-200 text-gray-800 rounded-lg hover:bg-gray-300 transition;
+  }
+}
+```
+***📄 HTML / JSX***
+```jsx
+<button class="btn-primary">Primary Button</button>
+<button class="btn-secondary">Secondary Button</button>
+```
+
+### 🔥 When Should You Use Custom Components?
+
+`Use them when:`
+
+- You repeat the same 6 to 10 utility classes everywhere
+- You want cleaner JSX
+- You need design consistency
+- Do NOT use them for one-time styling.
