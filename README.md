@@ -15,6 +15,7 @@
 11. [Responsive Design](#11-responsive-design)
 12. [Transitions & Animations](#12-transitions--animations)
 13. [Custom CSS](#13-custom-css)
+14. [Why use tailwind css](#14-why-use-tailwind-css)
 
 
 ## 1. Spacing
@@ -396,3 +397,60 @@ translate-x-4
 - You want cleaner JSX
 - You need design consistency
 - Do NOT use them for one-time styling.
+
+## 14. Why use tailwind css
+
+| Advantage          | Explanation                      |
+| ------------------ | -------------------------------- |
+| Faster development | No need to write CSS separately  |
+| Utility-first      | Small reusable classes           |
+| Consistent design  | Predefined spacing, colors       |
+| Responsive design  | Easy responsive classes          |
+| Smaller CSS bundle | Removes unused CSS in production |
+
+### Built-in Responsive Design
+
+***Example:***
+```jsx
+<div class="text-sm md:text-lg lg:text-xl">
+  Responsive Text
+</div>
+```
+***Breakpoints:***
+```jsx
+sm
+md
+lg
+xl
+2xl
+```
+### Easy Customization
+You can customize styles in ***tailwind.config.js***
+
+```jsx
+module.exports = {
+  theme: {
+    extend: {
+      colors: {
+        primary: "#1da1f2"
+      }
+    }
+  }
+};
+```
+### Tailwind vs Traditional CSS
+
+| Feature          | Tailwind        | Traditional CSS |
+| ---------------- | --------------- | --------------- |
+| Styling          | Utility classes | Custom CSS      |
+| Speed            | Faster          | Slower          |
+| CSS files        | Minimal         | Many files      |
+| Naming conflicts | None            | Possible        |
+
+### Tailwind vs Bootstrap
+
+| Feature       | Tailwind      | Bootstrap         |
+| ------------- | ------------- | ----------------- |
+| Approach      | Utility-first | Component-based   |
+| Customization | Very flexible | Limited           |
+| Design        | Custom design | Predefined design |
